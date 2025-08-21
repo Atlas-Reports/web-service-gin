@@ -26,6 +26,7 @@ func main() {
 	router := gin.Default()
 	router.Use(cors.Default())
 	router.GET("/albums", getAlbums)
+	router.POST("/albums", postAlbums)
 
 	router.Run("localhost:8080")
 }
